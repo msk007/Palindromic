@@ -8,7 +8,8 @@ def is_palindrome(sentence):
     sentence_rev = sentence[::-1]
     if sentence == sentence_rev:
          return True
-    elif sentence != sentence_rev:
+    else:
+         sentence != sentence_rev
          return False
 
 def main():
