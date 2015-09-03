@@ -17,7 +17,7 @@ def main():
     palindrome_maybe = is_palindrome(sentence)
     if palindrome_maybe==True:
        print("{} is a palindrome".format(sentence))
-    else:
+    if palindrome_maybe==False:
        print("{} is not a palindrome".format(sentence))
 
 
