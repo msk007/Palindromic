@@ -7,15 +7,15 @@ def is_palindrome(sentence):
     sentence = re.sub(r'[^A-Za-z]', "", (sentence.lower()))
     sentence_rev = sentence[::-1]
     if sentence == sentence_rev:
-         return ("True")
-    else:
-         return ("False")
+         return True
+    elif sentence != sentence_rev:
+         return False
 
 def main():
     sentence =input("What is your sentence? ")
     is_palindrome(sentence)
-    check = is_palindrome(sentence)
-    if check:
+    palindrome_maybe = is_palindrome(sentence)
+    if palindrome_maybe==True:
        print("{} is a palindrome".format(sentence))
     else:
        print("{} is not a palindrome".format(sentence))
